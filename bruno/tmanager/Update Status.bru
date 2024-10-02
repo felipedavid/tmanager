@@ -1,0 +1,17 @@
+meta {
+  name: Update Status
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{url}}/tasks/id/status
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "status": "IN_PROGRESS"
+  }
+}
