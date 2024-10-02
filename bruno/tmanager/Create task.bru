@@ -6,6 +6,13 @@ meta {
 
 post {
   url: {{url}}/tasks
-  body: none
+  body: json
   auth: none
+}
+
+body:json {
+  {
+    "title": "Test site2",
+    "description": "asdfasdf"
+  }
 }
